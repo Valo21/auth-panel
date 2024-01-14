@@ -46,7 +46,7 @@ export default function Page() {
         </div>
         <div>Dont have an account? <Link className='text-cyan-600' href='/auth/signup'>Create one</Link></div>
         <div className='border-[1px] mx-2 my-2 rounded-full border-slate-700/50'/>
-        <button type='button' onClick={() => signIn('google')}>Sign in with Google</button>
+        <button type='button' onClick={() => signIn('google', {...formData, callbackUrl: '/'})}>Sign in with Google</button>
       </Form>
     </main>
   )
